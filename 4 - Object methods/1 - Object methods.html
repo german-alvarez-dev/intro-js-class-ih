@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*69RcxrWXuk385lSxkIYYLA.png">
+    <title>Intro to objects - Ironhack Madrid</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Example 1
+
+        const student = {
+            fullName: 'John Doe',
+            height: 1.89,
+            weight: 81,
+            years: 24,
+            hobbies: ['Ski', 'Gadgets', 'Rave'],
+            showPresentation() {
+                console.log(`Me llamo ${this.fullName} y tengo ${this.years} años`)
+            },
+            showHobbies() {
+                console.log('Tengo', this.hobbies.length, 'aficiones que son', this.hobbies)
+            },
+            grow() {
+                const newAge = this.years + 1
+                this.years = newAge
+                console.log('Ahora tengo', this.years, 'años')
+            },
+            learnChess() {
+                this.hobbies.push('Ajedrez')
+            },
+            learnNewHobby(hobbyName) {
+                this.hobbies.push(hobbyName)
+            }
+        }
+
+
+        student.showPresentation()
+
+        student.showHobbies()
+
+        student.grow()
+        student.grow()
+        student.grow()
+        student.grow()
+
+        student.learnChess()
+
+        student.showHobbies()
+
+        student.learnNewHobby('Twerking')
+
+        student.showHobbies()
+
+
+
+        // ------------------------- EXCERCISES ------------------------- // 
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

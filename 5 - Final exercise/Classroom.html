@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*69RcxrWXuk385lSxkIYYLA.png">
+    <title>Intro to objects - Ironhack Madrid</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Final exercise
+
+        const classRoom = {}
+
+
+
+
+
+        // Exercise 1
+
+        console.log('El nombre de la clase es', classRoom.title)
+
+
+
+
+        // Exercise 2
+
+        console.log('La duración total es de', classRoom.duration, 'días')
+
+
+
+
+        // Exercise 3
+
+        console.log('La capacidad máxima de alumnos es de', classRoom.maxStudents)
+
+
+
+
+        // Exercise 4
+
+        console.log('¿Se entrega un certificado al terminar?', classRoom.isCertified)
+
+        if (classRoom.isCertified === true) {
+            console.log('¡Es genial que haya un certificado al terminar')
+        }
+
+        if (classRoom.isCertified === false) {
+            console.log('Ojalá hubiese un certificado al terminar')
+        }
+
+
+
+
+        // Exercise 5
+
+        console.log('Hay un total de', classRoom.topics.length, 'asignaturas:', classRoom.topics)
+
+
+
+
+
+        // Exercise 6
+
+        console.log('Ahora mismo tenemos un total de', classRoom.students.length, 'alumnos/as')
+
+
+
+
+
+        // Exercise 7 
+
+        const remainingSeats = undefined
+
+        console.log('¡Quedan', remainingSeats, 'plazas disponibles!')
+
+
+
+
+
+        // Exercise 8
+
+        console.log('Esta es la información de cada alumno/a:')
+
+        classRoom.students.forEach(eachStudent => {
+            console.log('Se llama', eachStudent.firstName, ' ', eachStudent.lastName, '-', eachStudent.city, 'años')
+        })
+
+
+
+
+
+        // Exercise 9
+
+        const sumYears = classRoom.students.reduce((acc, elm) => acc + elm, 0)
+
+        console.log('En total suman', sumYears, 'años')
+
+
+
+
+
+        // Exercise 10
+
+        const averageAge = undefined
+
+        console.log('La edad media es de', averageAge, 'años')
+
+
+
+
+
+        // Exercise 11
+
+        classRoom.incrementCapacity(5)
+
+        console.log('Ahora, la capacidad máxima de alumnos es de', classRoom.maxStudents)
+
+
+
+
+
+        // Exercise 12
+
+        const newStudent = {
+            firstName: 'Maria',
+            lastName: 'Pérez',
+            city: 'Gijón',
+            age: 19
+        }
+
+        classRoom.addStudent(newStudent)
+
+        console.log('Ahora mismo tenemos un total de', classRoom.students.length, 'alumnos/as')
+
+
+
+    </script>
+
+</body>
+
+</html>
